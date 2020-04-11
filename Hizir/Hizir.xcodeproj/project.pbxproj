@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBEFB6E2442524A00AA2E64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEFB6D2442524A00AA2E64 /* GoogleService-Info.plist */; };
 		DA42EE5A2442351100DC64C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42EE592442351100DC64C9 /* AppDelegate.swift */; };
 		DA42EE5C2442351100DC64C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42EE5B2442351100DC64C9 /* SceneDelegate.swift */; };
 		DA42EE5E2442351100DC64C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42EE5D2442351100DC64C9 /* ViewController.swift */; };
 		DA42EE612442351100DC64C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA42EE5F2442351100DC64C9 /* Main.storyboard */; };
 		DA42EE632442351200DC64C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA42EE622442351200DC64C9 /* Assets.xcassets */; };
 		DA42EE662442351200DC64C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA42EE642442351200DC64C9 /* LaunchScreen.storyboard */; };
+		FF4AB6191A17CE1E0641C433 /* Pods_Hizir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADF6C87EE00E6A749DDA9B1 /* Pods_Hizir.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBEFB6D2442524A00AA2E64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3ADF6C87EE00E6A749DDA9B1 /* Pods_Hizir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hizir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8744A4E7AFE17A3C1B008CD1 /* Pods-Hizir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hizir.debug.xcconfig"; path = "Target Support Files/Pods-Hizir/Pods-Hizir.debug.xcconfig"; sourceTree = "<group>"; };
+		9D657A4D4BB1F865695E8AD3 /* Pods-Hizir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hizir.release.xcconfig"; path = "Target Support Files/Pods-Hizir/Pods-Hizir.release.xcconfig"; sourceTree = "<group>"; };
 		DA42EE562442351100DC64C9 /* Hizir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hizir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA42EE592442351100DC64C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA42EE5B2442351100DC64C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4AB6191A17CE1E0641C433 /* Pods_Hizir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B413D660E48293453E4D7DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ADF6C87EE00E6A749DDA9B1 /* Pods_Hizir.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA1FCA77573C781F72AEF367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8744A4E7AFE17A3C1B008CD1 /* Pods-Hizir.debug.xcconfig */,
+				9D657A4D4BB1F865695E8AD3 /* Pods-Hizir.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA42EE4D2442351100DC64C9 = {
 			isa = PBXGroup;
 			children = (
 				DA42EE582442351100DC64C9 /* Hizir */,
 				DA42EE572442351100DC64C9 /* Products */,
+				AA1FCA77573C781F72AEF367 /* Pods */,
+				5B413D660E48293453E4D7DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +89,7 @@
 				DA42EE5F2442351100DC64C9 /* Main.storyboard */,
 				DA42EE622442351200DC64C9 /* Assets.xcassets */,
 				DA42EE642442351200DC64C9 /* LaunchScreen.storyboard */,
+				1DBEFB6D2442524A00AA2E64 /* GoogleService-Info.plist */,
 				DA42EE672442351200DC64C9 /* Info.plist */,
 			);
 			path = Hizir;
@@ -74,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA42EE6A2442351200DC64C9 /* Build configuration list for PBXNativeTarget "Hizir" */;
 			buildPhases = (
+				51422BB9BC51F65CD3699CB7 /* [CP] Check Pods Manifest.lock */,
 				DA42EE522442351100DC64C9 /* Sources */,
 				DA42EE532442351100DC64C9 /* Frameworks */,
 				DA42EE542442351100DC64C9 /* Resources */,
+				9B7721FCA9AD79D8844370D2 /* [CP] Embed Pods Frameworks */,
+				2A75170B1044A407035E779B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +157,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA42EE662442351200DC64C9 /* LaunchScreen.storyboard in Resources */,
+				1DBEFB6E2442524A00AA2E64 /* GoogleService-Info.plist in Resources */,
 				DA42EE632442351200DC64C9 /* Assets.xcassets in Resources */,
 				DA42EE612442351100DC64C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A75170B1044A407035E779B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hizir/Pods-Hizir-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hizir/Pods-Hizir-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hizir/Pods-Hizir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51422BB9BC51F65CD3699CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hizir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7721FCA9AD79D8844370D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hizir/Pods-Hizir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hizir/Pods-Hizir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hizir/Pods-Hizir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA42EE522442351100DC64C9 /* Sources */ = {
@@ -282,6 +373,7 @@
 		};
 		DA42EE6B2442351200DC64C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8744A4E7AFE17A3C1B008CD1 /* Pods-Hizir.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +392,7 @@
 		};
 		DA42EE6C2442351200DC64C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D657A4D4BB1F865695E8AD3 /* Pods-Hizir.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
